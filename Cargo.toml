@@ -1,0 +1,19 @@
+[package]
+name = "ex_1"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.4.1"  # Adjust the version as needed
+mongodb = "2.8.0"    # Adjust the version as needed
+async-std = "1.8.0"   # Adjust the version as needed
+async-executor = "1.5.1"  # Specify a version that works with async-std
+actix-rt = "2.9.0"
+serde = "1.0.195"
+dotenv = "0.15.0"
+
+[dependencies.async-global-executor]
+version = "2.4.1"  # Specify a version that works with async-executor
+
